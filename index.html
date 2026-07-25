@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>株主優待カレンダー</title>
+<link rel="icon" href="icon.png" />
+<style>
+  :root {
+    --bg: #F7F6F2;
+    --card: #FFFFFF;
+    --text: #1F2933;
+    --subtext: #6B7280;
+    --primary: #B45309;
+    --primary-soft: #FDE8CC;
+    --border: #E5E7EB;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17140F;
+      --card: #241F18;
+      --text: #F2EEE6;
+      --subtext: #B7AF9F;
+      --primary: #E0A24B;
+      --primary-soft: #3A2C15;
+      --border: #3A342A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17140F; --card: #241F18; --text: #F2EEE6; --subtext: #B7AF9F;
+    --primary: #E0A24B; --primary-soft: #3A2C15; --border: #3A342A;
+  }
+  :root[data-theme="light"] {
+    --bg: #F7F6F2; --card: #FFFFFF; --text: #1F2933; --subtext: #6B7280;
+    --primary: #B45309; --primary-soft: #FDE8CC; --border: #E5E7EB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 380px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 32px 28px;
+    text-align: center;
+  }
+  img.icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+  p.desc {
+    font-size: 13px;
+    color: var(--subtext);
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  a.link {
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a.link:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="icon" src="icon.png" alt="" />
+    <h1>株主優待カレンダー</h1>
+    <p class="desc">保有銘柄の株主優待・権利確定日をまとめて管理できるiOSアプリです。</p>
+    <div class="links">
+      <a class="link" href="https://apps.apple.com/jp/app/id6791579376">App Storeで見る</a>
+      <a class="link" href="https://yusuke-nakajima.github.io/yutai-data/support.html">サポート・お問い合わせ</a>
+      <a class="link" href="https://yusuke-nakajima.github.io/yutai-data/privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+</body>
+</html>
